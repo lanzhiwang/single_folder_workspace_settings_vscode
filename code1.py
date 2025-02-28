@@ -6,7 +6,7 @@ def add(a, b):
 def main(i, j):
     i = i + 3
     j = j + 4
-    return add(i + j)
+    return add(i, j)
 
 if __name__ == "__main__":
     x = 2
