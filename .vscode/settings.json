@@ -889,7 +889,8 @@
     // Overrides colors from the currently selected color theme.
     "workbench.colorCustomizations": {},
     // Specifies the color theme used in the workbench.
-    "workbench.colorTheme": "Default Dark Modern",
+    // 颜色主题
+    "workbench.colorTheme": "Visual Studio Dark",
     // Controls where the command palette should ask chat questions.
     //  - chatView: Ask chat questions in the Chat view.
     //  - quickChat: Ask chat questions in Quick Chat.
@@ -1144,13 +1145,13 @@
     // Controls whether activity items in the panel title are shown as label or icon.
     "workbench.panel.showLabels": true,
     // Specifies the preferred color theme for dark OS appearance when `window.autoDetectColorScheme` is enabled.
-    "workbench.preferredDarkColorTheme": "Default Dark Modern",
+    "workbench.preferredDarkColorTheme": "Visual Studio Dark",
     // Specifies the preferred color theme used in high contrast dark mode when `window.autoDetectHighContrast` is enabled.
-    "workbench.preferredHighContrastColorTheme": "Default High Contrast",
+    "workbench.preferredHighContrastColorTheme": "Visual Studio Dark",
     // Specifies the preferred color theme used in high contrast light mode when `window.autoDetectHighContrast` is enabled.
-    "workbench.preferredHighContrastLightColorTheme": "Default High Contrast Light",
+    "workbench.preferredHighContrastLightColorTheme": "Visual Studio Dark",
     // Specifies the preferred color theme for light OS appearance when `window.autoDetectColorScheme` is enabled.
-    "workbench.preferredLightColorTheme": "Default Light Modern",
+    "workbench.preferredLightColorTheme": "Visual Studio Dark",
     // Specifies the product icon theme used.
     //  - Default: Default
     "workbench.productIconTheme": "Default",
@@ -1198,7 +1199,7 @@
     //  - newUntitledFile: Open a new untitled text file (only applies when opening an empty window).
     //  - welcomePageInEmptyWorkbench: Open the Welcome page when opening an empty workbench.
     //  - terminal: Open a new terminal in the editor area.
-    "workbench.startupEditor": "welcomePage",
+    "workbench.startupEditor": "none",
     // Controls the visibility of the status bar at the bottom of the workbench.
     "workbench.statusBar.visible": true,
     // When enabled, will show the watermark tips when no editor is open.
@@ -2848,7 +2849,7 @@
     "terminal.integrated.drawBoldTextInBrightColors": true,
     // This is now deprecated. Instead use the `terminal.integrated.enableVisualBell` and `accessibility.signals.terminalBell` settings.
     //
-    "terminal.integrated.enableBell": false,
+    // "terminal.integrated.enableBell": false,
     // Whether to enable file links in terminals. Links can be slow when working on a network drive in particular because each file link is verified against the file system. Changing this will take effect only in new terminals.
     //  - off: Always off.
     //  - on: Always on.
@@ -3345,7 +3346,7 @@
     // Configure settings to be overridden for the coffeescript language.
     "[coffeescript]": {
         "diffEditor.ignoreTrimWhitespace": false,
-        "editor.defaultColorDecorators": false
+        "editor.defaultColorDecorators": "never"
     },
     // Configure settings to be overridden for the csharp language.
     "[csharp]": {
@@ -3420,7 +3421,7 @@
     },
     // Configure settings to be overridden for the julia language.
     "[julia]": {
-        "editor.defaultColorDecorators": false
+        "editor.defaultColorDecorators": "never"
     },
     // Configure settings to be overridden for the less language.
     "[less]": {
@@ -3450,11 +3451,11 @@
     // Configure settings to be overridden for the python language.
     "[python]": {
         "diffEditor.ignoreTrimWhitespace": false,
-        "editor.defaultColorDecorators": false
+        "editor.defaultColorDecorators": "never"
     },
     // Configure settings to be overridden for the Ruby language.
     "[ruby]": {
-        "editor.defaultColorDecorators": false
+        "editor.defaultColorDecorators": "never"
     },
     // Configure settings to be overridden for the scss language.
     "[scss]": {
@@ -3467,7 +3468,7 @@
     // Configure settings to be overridden for the shellscript language.
     "[shellscript]": {
         "files.eol": "\n",
-        "editor.defaultColorDecorators": false
+        "editor.defaultColorDecorators": "never"
     },
     // Configure settings to be overridden for the snippets language.
     "[snippets]": {
@@ -3482,7 +3483,7 @@
         "editor.tabSize": 2,
         "editor.autoIndent": "advanced",
         "diffEditor.ignoreTrimWhitespace": false,
-        "editor.defaultColorDecorators": false
+        "editor.defaultColorDecorators": "never"
     },
     // Chat
     // The maximum number of requests to allow Copilot Edits to use in agent mode.
@@ -3676,7 +3677,7 @@
     },
     // Plays a signal - sound (audio cue) and/or announcement (alert) - when the terminal bell is ringing.
     "accessibility.signals.terminalBell": {
-        "sound": "auto",
+        "sound": "off",
         "announcement": "auto"
     },
     // Plays a signal - sound (audio cue) and/or announcement (alert) - when a terminal command fails (non-zero exit code) or when a command with such an exit code is navigated to in the accessible view.
